@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/alooavartar"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#ffffff"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,39 +18,41 @@
         android:textColor="@color/custom_blue"
         android:textSize="20sp"
         android:textStyle="bold" />
+
     <EditText
-        android:layout_marginTop="10dp"
+        android:id="@+id/heightEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/custom_black"
-        android:inputType="number" />
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textColor="@color/custom_red" />
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/custom_blue"
-        android:layout_marginTop="30dp"
         android:id="@+id/weight_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/weight" />
+        android:layout_marginTop="30dp"
+        android:text="@string/weight"
+        android:textColor="@color/custom_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/custom_black"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@color/custom_red" />
+
     <Button
-        android:layout_marginTop="40dp"
-        android:text="@string/okay"
+        android:id="@+id/resultButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:background="@color/custom_blue"
-        />
-
+        android:text="@string/okay" />
 
 
 </LinearLayout>
